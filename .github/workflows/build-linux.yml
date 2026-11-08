@@ -14,8 +14,8 @@ jobs:
       - name: Download source
         uses: actions/checkout@v4
 
-      - - name: Install dependencies
-          run: |
+      - name: Install dependencies
+        run: |
             sudo apt-get update
             sudo apt-get install -y \
               build-essential \
@@ -26,7 +26,7 @@ jobs:
               libsdl2-net-dev \
               libpng-dev \
               fluidsynth \
-              libfluidsynth-dev
+              libfluidsynth-dev  
 
       - name: Configure DOOM
         run: |
